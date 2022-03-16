@@ -151,7 +151,9 @@ for (let i = startingTokenId; i < totalSupply && !existsFile; i++) {
     }
 }
 
-await Promise.allSettled(metadataCalls);
+if (metadataCalls.length > 0) {
+    await Promise.allSettled(metadataCalls);
+}
 
 if (shouldFilterForMetadata) {
     assets.filter(function (asset) {
