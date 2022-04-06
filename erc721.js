@@ -216,7 +216,7 @@ for (const nft of assets) {
     ;
 }
 
-await new Promise.allSettled(offerCalls);
+await Promise.allSettled(offerCalls);
 
 function exitHandler() {
     console.log(new Date(), 'Exit handler called', arguments);
