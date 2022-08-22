@@ -1,31 +1,40 @@
 {
-  "name": "opensea-offer-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "erc721.js",
+  "name": "@wtc/nft-marketplaces-offer-bot",
+  "version": "2.0.0",
+  "description": "Automated mass bidding on opensea/looksrare nft collections, with optional filtering by traits",
+  "main": "src/index.js",
   "keywords": [
     "opensea",
+    "looksrare",
     "offer-bot",
     "bot",
     "nft",
     "eth"
   ],
-  "author": "Kevin Mauel | What The Commit",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:What-The-Commit/opensea-offer-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/What-The-Commit/opensea-offer-bot/issues"
+  },
+  "homepage": "https://github.com/What-The-Commit/opensea-offer-bot#readme",
+  "author": "Kevin Mauel | tony-stark.eth | What The Commit",
   "license": "MIT",
   "type": "module",
-  "private": true,
   "engines": {
-    "node": "v16.13.*"
+    "node": "v16.17.*"
   },
   "dependencies": {
-    "@truffle/hdwallet-provider": "^2.0.3",
-    "async-sema": "^3.1.1",
-    "dotenv": "^16.0.0",
-    "env": "^0.0.2",
-    "ethers": "^5.5.4",
-    "inquirer": "^8.2.0",
-    "node-fetch": "^3.2.1",
-    "opensea-js": "^2.0.1",
-    "yargs": "^17.3.1"
+    "@looksrare/sdk": "0.8.1",
+    "@truffle/hdwallet-provider": "2.0.14",
+    "alchemy-sdk": "2.0.3",
+    "async-sema": "3.1.1",
+    "dotenv": "16.0.1",
+    "ethers": "5.7.0",
+    "inquirer": "9.1.0",
+    "node-fetch": "3.2.10",
+    "opensea-js": "4.0.7",
+    "yargs": "17.5.1"
   }
 }
